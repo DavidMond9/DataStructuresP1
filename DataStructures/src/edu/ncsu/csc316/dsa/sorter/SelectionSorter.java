@@ -9,8 +9,6 @@ import java.util.Comparator;
  * @param <E> the generic type of data to sort
  */
 public class SelectionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
-
-    private Comparator<E> comparator;
     
     public SelectionSorter(Comparator<E> comparator) {
         super(comparator);
@@ -25,7 +23,7 @@ public class SelectionSorter<E extends Comparable<E>> extends AbstractComparison
         for(int i = 0; i < data.length - 1; i++) {
         	int min = i;
         	for(int j = i+1; j < data.length - 1; j++) {
-        		if(data[j].compareTo(data[min]) < 0) {
+        		if(super.compare(data[j], data[min]) < 1) {
         			min = j;
         		}
         	}

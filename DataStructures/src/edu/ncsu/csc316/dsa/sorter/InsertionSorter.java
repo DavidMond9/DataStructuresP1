@@ -8,16 +8,13 @@ import java.util.Comparator;
  * @author Dr. King
  */
 public class InsertionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
-
-    private Comparator<E> comparator;
-    
-    
+        
     public InsertionSorter(Comparator<E> comparator) {
     	super(comparator);
     }
     
     public InsertionSorter() {
-        this(null);
+        super(null);
     }
     
     
@@ -25,7 +22,7 @@ public class InsertionSorter<E extends Comparable<E>> extends AbstractComparison
         for (int i = 1; i < data.length; i++) {
             E x = data[i];
             int j = i - 1;
-            while (j >= 0 && data[j].compareTo(x) > 0) {
+            while (j >= 0 && super.compare(data[j], x) == 1){
                 data[j + 1] = data[j];
                 j = j - 1;
             }
