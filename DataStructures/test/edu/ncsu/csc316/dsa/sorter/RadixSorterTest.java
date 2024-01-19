@@ -1,23 +1,20 @@
 package edu.ncsu.csc316.dsa.sorter;
-
 import static org.junit.Assert.assertEquals;
-
-import java.util.Comparator;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import edu.ncsu.csc316.dsa.data.Student;
 
-public class CountingSorterTest {
-	
+public class RadixSorterTest {
 	private Student sOne;
 	private Student sTwo;
 	private Student sThree;
 	private Student sFour;
 	private Student sFive;
 	
-	private CountingSorter<Student> sorter;
+	private RadixSorter<Student> sorter;
 
 	@Before
 	public void setUp() {
@@ -27,7 +24,7 @@ public class CountingSorterTest {
 		sFour = new Student("FourFirst", "FourLast", 4, 4, 4.0, "fourUnityID");
 		sFive = new Student("FiveFirst", "FiveLast", 5, 5, 5.0, "fiveUnityID");
 		
-		sorter = new CountingSorter<Student>();
+		sorter = new RadixSorter<Student>();
 	}
 	
 	@Test

@@ -1,21 +1,20 @@
 package edu.ncsu.csc316.dsa.sorter;
-
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class InsertionSorterTest {
-
+public class SelectionSorterTest {
 	private Integer[] dataAscending = { 1, 2, 3, 4, 5 };
 	private Integer[] dataDescending = { 5, 4, 3, 2, 1 };
 	private Integer[] dataRandom = { 4, 1, 5, 3, 2 };
 
-	private InsertionSorter integerSorter;
+	private SelectionSorter integerSorter;
 
 	@Before
 	public void setUp() {
-		integerSorter = new InsertionSorter<Integer>();
+		integerSorter = new SelectionSorter<Integer>();
 	}
 
 	@Test
@@ -42,8 +41,4 @@ public class InsertionSorterTest {
 		assertTrue(dataRandom[4].equals(5));
 	}
 
-	@Test
-	public void testSortStudent() {
-		
-	}
 }

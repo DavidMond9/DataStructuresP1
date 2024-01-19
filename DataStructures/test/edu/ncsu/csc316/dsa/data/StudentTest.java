@@ -60,7 +60,8 @@ public class StudentTest {
 		assertTrue(sTwo.compareTo(sTwo) == 0);
 	}
 	
-	// TODO: Add test cases
-	// Suggestions:
-	// -> Test .equals(), .toString(), etc.
+	@Test
+	public void testToString() {
+		assertEquals(sOne.toString(), "Student [first=OneFirst, last=OneLast, id=1, creditHours=1, gpa=1.0, unityID=oneUnityID]");
+	}
 }

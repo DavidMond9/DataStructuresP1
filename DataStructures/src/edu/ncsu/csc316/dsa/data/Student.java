@@ -184,24 +184,7 @@ public class Student implements Comparable<Student>, Identifiable {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Student other = (Student) obj;
-		if (first == null) {
-			if (other.first != null)
-				return false;
-		} else if (!first.equals(other.first))
-			return false;
-		if (id != other.id)
-			return false;
-		if (last == null) {
-			if (other.last != null)
-				return false;
-		} else if (!last.equals(other.last))
-			return false;
-		return true;
+		return false;
 	}
 	/**
 	 * Returns the student in string format.
