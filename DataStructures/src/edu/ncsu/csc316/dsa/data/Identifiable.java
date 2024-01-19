@@ -6,5 +6,9 @@ package edu.ncsu.csc316.dsa.data;
  *
  */
 public interface Identifiable{
-	//TODO: Complete this interface
+	/**
+	 * Gets the ID for counting sort.
+	 * @return the ID.
+	 */
+	int getId();
 }
