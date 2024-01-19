@@ -27,11 +27,16 @@ public class StudentManager {
      * Initializes a StudentManager
      * @param pathToFile - the path to the input student CSV file
      */
-    public StudentManager(String pathToFile)
-    {
-        roster = StudentReader.readInputAsArray(pathToFile);
-        sorter = new InsertionSorter<Student>();
+
+    public StudentManager(String pathToFile) {
+        this(pathToFile, new InsertionSorter<Student>());
     }
+    public StudentManager(String pathToFile, Sorter<Student> sorter) {
+        roster = StudentReader.readInputAsArray(pathToFile);
+        this.sorter = sorter;
+    }
+    
+
         
     /**
      * Returns a sorted array of Students

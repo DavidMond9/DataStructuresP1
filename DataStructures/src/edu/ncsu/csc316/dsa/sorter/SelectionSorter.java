@@ -8,21 +8,18 @@ import java.util.Comparator;
  *
  * @param <E> the generic type of data to sort
  */
-public class SelectionSorter<E extends Comparable<E>> implements Sorter<E> {
+public class SelectionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
 
     private Comparator<E> comparator;
     
     public SelectionSorter(Comparator<E> comparator) {
-        setComparator(comparator);
+        super(comparator);
     }
     
-    private void setComparator(Comparator<E> comparator) {
-        if(comparator == null) {
-            this.comparator = new NaturalOrder();
-        } else {
-            this.comparator = comparator;
-        }
-    }   
+    public SelectionSorter() {
+    	this(null);
+    }
+      
 
     public void sort(E[] data) {
         for(int i = 0; i < data.length - 1; i++) {
@@ -37,12 +34,6 @@ public class SelectionSorter<E extends Comparable<E>> implements Sorter<E> {
         		data[i] = data[min];
         		data[min] = x;
         	}
-        }
-    }
-    
-    private class NaturalOrder implements Comparator<E> {
-        public int compare(E first, E second) {
-            return ((Comparable<E>) first).compareTo(second);
         }
     }
 }

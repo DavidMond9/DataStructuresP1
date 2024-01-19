@@ -7,7 +7,20 @@ import java.util.Comparator;
  * 
  * @author Dr. King
  */
-public class InsertionSorter<E extends Comparable<E>> implements Sorter<E> {
+public class InsertionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
+
+    private Comparator<E> comparator;
+    
+    
+    public InsertionSorter(Comparator<E> comparator) {
+    	super(comparator);
+    }
+    
+    public InsertionSorter() {
+        this(null);
+    }
+    
+    
     public void sort(E[] data) { 
         for (int i = 1; i < data.length; i++) {
             E x = data[i];
@@ -19,10 +32,4 @@ public class InsertionSorter<E extends Comparable<E>> implements Sorter<E> {
             data[j + 1] = x;
         }
     }
-	private class NaturalOrder implements Comparator<E> {
-	    public int compare(E first, E second) {
-	        return ((Comparable<E>) first).compareTo(second);
-	    }
-	}
-	
 }

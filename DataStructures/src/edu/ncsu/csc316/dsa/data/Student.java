@@ -8,7 +8,7 @@ package edu.ncsu.csc316.dsa.data;
  * @author Dr. King
  *
  */
-public class Student implements Comparable<Student> {
+public class Student implements Comparable<Student>, Identifiable {
 	/**
 	 * Represents the first name of the student.
 	 */
