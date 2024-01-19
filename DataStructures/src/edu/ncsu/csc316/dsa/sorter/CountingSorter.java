@@ -27,7 +27,7 @@ public class CountingSorter<E extends Identifiable> implements Sorter<E> {
         }
         @SuppressWarnings("unchecked")
         E[] F = (E[])(new Identifiable[data.length]);
-        for(int i = data.length - 1; i >= 0; i++) {
+        for(int i = data.length - 1; i >= 0; i--) {
         	F[B[data[i].getId() - min] - 1] = data[i];
         	B[data[i].getId() - min] = B[data[i].getId() - min] - 1;
         }

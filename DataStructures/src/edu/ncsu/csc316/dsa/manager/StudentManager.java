@@ -31,6 +31,7 @@ public class StudentManager {
     public StudentManager(String pathToFile) {
         this(pathToFile, new InsertionSorter<Student>());
     }
+    
     public StudentManager(String pathToFile, Sorter<Student> sorter) {
         roster = StudentReader.readInputAsArray(pathToFile);
         this.sorter = sorter;

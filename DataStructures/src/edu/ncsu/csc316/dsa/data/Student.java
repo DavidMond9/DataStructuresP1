@@ -141,13 +141,26 @@ public class Student implements Comparable<Student>, Identifiable {
 	 */
 	@Override
 	public int compareTo(Student o) {
-		if(this.last.compareTo(o.last) == 0) {
-			if(this.first.compareTo(o.first) == 0) {
-				return this.id - o.id;
-			}
-			return this.first.compareTo(o.first);
+		if(last.compareTo(o.getLast()) > 0) {
+			return 1;
 		}
-		return this.last.compareTo(o.last);
+		else if(last.compareTo(o.getLast()) < 0) {
+			return -1;
+		}
+		
+		if(first.compareTo(o.getFirst()) > 0) {
+			return 1;
+		}
+		else if(first.compareTo(o.getFirst()) < 0) {
+			return -1;
+		}
+		if(id < o.getId()) {
+			return 1;
+		}
+		else if(id > o.getId()) {
+			return -1;
+		}
+		return 0;
 	}
 	/**
 	 * Gets the hashcode for a student by first name, last name, and student ID.

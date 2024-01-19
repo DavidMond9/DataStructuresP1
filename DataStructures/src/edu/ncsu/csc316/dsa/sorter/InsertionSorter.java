@@ -19,7 +19,7 @@ public class InsertionSorter<E extends Comparable<E>> extends AbstractComparison
     
     
     public void sort(E[] data) { 
-        for (int i = 1; i <= data.length; i++) {
+        for (int i = 1; i < data.length; i++) {
             E x = data[i];
             int j = i - 1;
             while (j >= 0 && super.compare(data[j], x) == 1){

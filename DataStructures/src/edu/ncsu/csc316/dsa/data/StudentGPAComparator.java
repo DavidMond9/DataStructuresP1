@@ -18,14 +18,11 @@ public class StudentGPAComparator implements Comparator<Student>{
 	@Override
 	public int compare(Student one, Student two) {
 		if(one.getGpa() < two.getGpa()) {
-			return -1;
-		}
-		else if(one.getGpa() > two.getGpa()) {
 			return 1;
 		}
-		else {
-			return one.compareTo(two);
+		else if(one.getGpa() > two.getGpa()) {
+			return -1;
 		}
+		return 0;
 	}
-
 }
