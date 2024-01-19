@@ -14,7 +14,7 @@ public class BubbleSorter<E extends Comparable<E>> extends AbstractComparisonSor
 		boolean r = true;
 		while(r) {
 			r = false;
-			for(int i = 1; i < data.length; i++) {
+			for(int i = 1; i <= data.length; i++) {
 				if(super.compare(data[i], data[i - 1]) < 0) {
 					E x = data[i - 1];
 					data[i - 1] = data[i];
