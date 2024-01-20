@@ -8,10 +8,21 @@ import org.junit.Test;
  * Tests the Selection Sorter with lists of integers.
  */
 public class SelectionSorterTest {
+	/**
+	 * Test list 1.
+	 */
 	private Integer[] dataAscending = { 1, 2, 3, 4, 5 };
+	/**
+	 * Test list 2.
+	 */
 	private Integer[] dataDescending = { 5, 4, 3, 2, 1 };
+	/**
+	 * Test list 3.
+	 */
 	private Integer[] dataRandom = { 4, 1, 5, 3, 2 };
-
+	/**
+	 * Test selection sorter..
+	 */
 	private SelectionSorter<Integer> integerSorter;
 
 	@Before

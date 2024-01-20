@@ -10,12 +10,29 @@ import edu.ncsu.csc316.dsa.data.Student;
  * Tests the Radix Sorter with lists of students.
  */
 public class RadixSorterTest {
+	/**
+	 * Test student one.
+	 */
 	private Student sOne;
+	/**
+	 * Test student two.
+	 */
 	private Student sTwo;
+	/**
+	 * Test student three.
+	 */
 	private Student sThree;
+	/**
+	 * Test student four.
+	 */
 	private Student sFour;
+	/**
+	 * Test student five.
+	 */
 	private Student sFive;
-	
+	/**
+	 * Sorter for Radix.
+	 */
 	private RadixSorter<Student> sorter;
 
 	@Before

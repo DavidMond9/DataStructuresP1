@@ -11,13 +11,29 @@ import edu.ncsu.csc316.dsa.data.Student;
  * Tests the Counting Sorter with lists of Students.
  */
 public class CountingSorterTest {
-	
+	/**
+	 * Test student 1.
+	 */
 	private Student sOne;
+	/**
+	 * Test student 2.
+	 */
 	private Student sTwo;
+	/**
+	 * Test student 3.
+	 */
 	private Student sThree;
+	/**
+	 * Test student 4.
+	 */
 	private Student sFour;
+	/**
+	 * Test student 5.
+	 */
 	private Student sFive;
-	
+	/**
+	 * Test sorter for counting.
+	 */
 	private CountingSorter<Student> sorter;
 	
 	@Before
