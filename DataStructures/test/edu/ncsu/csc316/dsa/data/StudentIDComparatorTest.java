@@ -7,12 +7,21 @@ import org.junit.Test;
 
 /**
  * Tests the StudentIDComparator test class.
+ * @author David Mond
  */
 public class StudentIDComparatorTest {
-
+	
+	/**
+	 * Test student 1.
+	 */
 	private Student sOne;
+	/**
+	 * Test Student 2.
+	 */
 	private Student sTwo;
-
+	/**
+	 * Test comparator for studentID.
+	 */
 	private StudentIDComparator comparator;
 
 	@Before

@@ -8,6 +8,7 @@ import edu.ncsu.csc316.dsa.data.Student;
 
 /**
  * Tests the Student Reader.
+ * @author David Mond
  */
 public class StudentReaderTest {
 	

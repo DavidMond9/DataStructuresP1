@@ -9,6 +9,7 @@ import edu.ncsu.csc316.dsa.data.Student;
 
 /**
  * Tests the Student Manager Class.
+ * @author David Mond
  */
 public class StudentManagerTest {
 

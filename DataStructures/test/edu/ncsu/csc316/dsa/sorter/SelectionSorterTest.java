@@ -6,6 +6,7 @@ import org.junit.Test;
 
 /**
  * Tests the Selection Sorter with lists of integers.
+ * @author David Mond
  */
 public class SelectionSorterTest {
 	/**

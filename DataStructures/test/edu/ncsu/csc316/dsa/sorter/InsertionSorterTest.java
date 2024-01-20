@@ -7,6 +7,7 @@ import org.junit.Test;
 
 /**
  * Tests the insertion sorter with integers.
+ * @author David Mond
  */
 public class InsertionSorterTest {
 	/**

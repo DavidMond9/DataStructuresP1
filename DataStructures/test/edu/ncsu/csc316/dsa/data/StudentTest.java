@@ -7,10 +7,16 @@ import org.junit.Test;
 
 /**
  * Tests the Student Class.
+ * @author David Mond
  */
 public class StudentTest {
-	
+	/**
+	 * Test student 1.
+	 */
 	private Student sOne;
+	/**
+	 * Test student 2.
+	 */
 	private Student sTwo;
 
 	@Before

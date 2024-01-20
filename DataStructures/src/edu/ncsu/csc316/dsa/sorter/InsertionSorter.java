@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 /**
  * InsertionSorter uses the insertion sort algorithm to sort data.
- * @param the generic type of data to sort
+ * @param <E> the generic type of data to sort
  * @author Dr. King
  */
 public class InsertionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {

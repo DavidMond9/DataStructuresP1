@@ -9,6 +9,7 @@ import edu.ncsu.csc316.dsa.data.Student;
 
 /**
  * Tests the Counting Sorter with lists of Students.
+ * @author David Mond
  */
 public class CountingSorterTest {
 	/**

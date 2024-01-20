@@ -7,12 +7,20 @@ import org.junit.Test;
 
 /**
  * Tests the StudentGPA Comparator class.
+ * @author David Mond
  */
 public class StudentGPAComparatorTest {
-
+	/**
+	 * Test student 1.
+	 */
 	private Student sOne;
+	/**
+	 * Test student two.
+	 */
 	private Student sTwo;
-
+	/**
+	 * Test comparator for studentGPA.
+	 */
 	private StudentGPAComparator comparator;
 
 	@Before
