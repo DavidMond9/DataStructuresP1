@@ -2,8 +2,6 @@ package edu.ncsu.csc316.dsa.sorter;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.Comparator;
-
 import org.junit.Before;
 import org.junit.Test;
 

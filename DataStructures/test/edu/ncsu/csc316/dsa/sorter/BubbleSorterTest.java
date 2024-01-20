@@ -1,11 +1,9 @@
 package edu.ncsu.csc316.dsa.sorter;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.ncsu.csc316.dsa.data.Student;
 
 public class BubbleSorterTest {
 	private Integer[] dataAscending = { 1, 2, 3, 4, 5 };

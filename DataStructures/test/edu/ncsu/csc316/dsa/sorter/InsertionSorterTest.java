@@ -11,7 +11,7 @@ public class InsertionSorterTest {
 	private Integer[] dataDescending = { 5, 4, 3, 2, 1 };
 	private Integer[] dataRandom = { 4, 1, 5, 3, 2 };
 
-	private InsertionSorter integerSorter;
+	private InsertionSorter<Integer> integerSorter;
 
 	@Before
 	public void setUp() {
@@ -40,10 +40,5 @@ public class InsertionSorterTest {
 		assertTrue(dataRandom[2].equals(3));
 		assertTrue(dataRandom[3].equals(4));
 		assertTrue(dataRandom[4].equals(5));
-	}
-
-	@Test
-	public void testSortStudent() {
-		
 	}
 }

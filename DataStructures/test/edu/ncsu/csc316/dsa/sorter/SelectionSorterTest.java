@@ -1,5 +1,4 @@
 package edu.ncsu.csc316.dsa.sorter;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
@@ -10,7 +9,7 @@ public class SelectionSorterTest {
 	private Integer[] dataDescending = { 5, 4, 3, 2, 1 };
 	private Integer[] dataRandom = { 4, 1, 5, 3, 2 };
 
-	private SelectionSorter integerSorter;
+	private SelectionSorter<Integer> integerSorter;
 
 	@Before
 	public void setUp() {
