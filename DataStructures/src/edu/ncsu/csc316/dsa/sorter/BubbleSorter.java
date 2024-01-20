@@ -6,6 +6,7 @@ import java.util.Comparator;
  * BubbleSorter class, extends Comparable and AbstractComparisonSorter. Uses the bubble
  * sort to sort different lists.
  * @param <E> the generic type of data to sort
+ * @author David Mond
  */
 public class BubbleSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
 	/**

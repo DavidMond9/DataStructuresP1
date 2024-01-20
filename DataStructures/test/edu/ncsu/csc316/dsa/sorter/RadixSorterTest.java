@@ -8,6 +8,7 @@ import edu.ncsu.csc316.dsa.data.Student;
 
 /**
  * Tests the Radix Sorter with lists of students.
+ * @author David Mond
  */
 public class RadixSorterTest {
 	/**

@@ -5,6 +5,7 @@ import java.util.Comparator;
 /**
  * AbstractComparisonSorter for all of the types of sorters, central interface.
  * @param <E> type to compare.
+ * @author David Mond
  */
 public abstract class AbstractComparisonSorter<E extends Comparable<E>> implements Sorter<E> {
 	/**
