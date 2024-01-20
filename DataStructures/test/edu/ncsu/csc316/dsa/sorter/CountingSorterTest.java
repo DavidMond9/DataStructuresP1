@@ -7,6 +7,9 @@ import org.junit.Test;
 
 import edu.ncsu.csc316.dsa.data.Student;
 
+/**
+ * Tests the Counting Sorter with lists of Students.
+ */
 public class CountingSorterTest {
 	
 	private Student sOne;
@@ -16,8 +19,11 @@ public class CountingSorterTest {
 	private Student sFive;
 	
 	private CountingSorter<Student> sorter;
-
+	
 	@Before
+	/**
+	 * Sets up the list of students.
+	 */
 	public void setUp() {
 		sOne = new Student("OneFirst", "OneLast", 1, 1, 1.0, "oneUnityID");
 		sTwo = new Student("TwoFirst", "TwoLast", 2, 2, 2.0, "twoUnityID");
@@ -29,6 +35,9 @@ public class CountingSorterTest {
 	}
 	
 	@Test
+	/**
+	 * Tests the sorter.
+	 */
 	public void testSortStudent() {
 		Student[] original = { sTwo, sOne, sFour, sThree, sFive };
 		sorter.sort(original);

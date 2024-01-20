@@ -6,9 +6,15 @@ import org.junit.Test;
 
 import edu.ncsu.csc316.dsa.data.Student;
 
+/**
+ * Tests the Student Reader.
+ */
 public class StudentReaderTest {
 	
 	@Test
+	/**
+	 * Tests the Reader and the contents of the file.
+	 */
 	public void testReadFile() {
 		Student[] contents = StudentReader.readInputAsArray("input/student_ascendingID.csv");
 		assertEquals("Amber",contents[0].getFirst());
@@ -28,8 +34,4 @@ public class StudentReaderTest {
 		assertEquals("Tanner",contents[14].getFirst());
 		assertEquals("Dante",contents[15].getFirst());
 	}
-	
-	// TODO: Add test cases
-	// Suggestions:
-	// -> Test that each line processes the data in the correct order
 }

@@ -5,6 +5,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Tests the insertion sorter with integers.
+ */
 public class InsertionSorterTest {
 
 	private Integer[] dataAscending = { 1, 2, 3, 4, 5 };
@@ -14,11 +17,17 @@ public class InsertionSorterTest {
 	private InsertionSorter<Integer> integerSorter;
 
 	@Before
+	/**
+	 * Sets up the insertion sorter with integers.
+	 */
 	public void setUp() {
 		integerSorter = new InsertionSorter<Integer>();
 	}
 
 	@Test
+	/**
+	 * Tests the sorter.
+	 */
 	public void testSortIntegers() {
 		integerSorter.sort(dataAscending);
 		assertTrue(dataAscending[0].equals(1));

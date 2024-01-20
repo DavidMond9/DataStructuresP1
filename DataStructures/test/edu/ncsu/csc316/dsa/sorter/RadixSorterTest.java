@@ -6,6 +6,9 @@ import org.junit.Test;
 
 import edu.ncsu.csc316.dsa.data.Student;
 
+/**
+ * Tests the Radix Sorter with lists of students.
+ */
 public class RadixSorterTest {
 	private Student sOne;
 	private Student sTwo;
@@ -16,6 +19,9 @@ public class RadixSorterTest {
 	private RadixSorter<Student> sorter;
 
 	@Before
+	/**
+	 * Tests the set up with students.
+	 */
 	public void setUp() {
 		sOne = new Student("OneFirst", "OneLast", 1, 1, 1.0, "oneUnityID");
 		sTwo = new Student("TwoFirst", "TwoLast", 2, 2, 2.0, "twoUnityID");
@@ -27,6 +33,9 @@ public class RadixSorterTest {
 	}
 	
 	@Test
+	/**
+	 * Tests sorter with student.
+	 */
 	public void testSortStudent() {
 		Student[] original = { sTwo, sOne, sFour, sThree, sFive };
 		sorter.sort(original);

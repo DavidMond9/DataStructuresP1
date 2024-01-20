@@ -4,20 +4,28 @@ import java.util.Comparator;
 
 /**
  * InsertionSorter uses the insertion sort algorithm to sort data.
- * 
+ * @param the generic type of data to sort
  * @author Dr. King
  */
 public class InsertionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
-        
+    
+	/**
+	 * Constructor for InsertionSorter, has a comparator.
+	 * @param comparator comparator for the sorter.
+	 */
     public InsertionSorter(Comparator<E> comparator) {
     	super(comparator);
     }
-    
+    /**
+     * Constructor for InsertionSorter, no comparator.
+     */
     public InsertionSorter() {
         super(null);
     }
     
-    
+    /**
+     * Sorts using the Insertion Sort technique.
+     */
     public void sort(E[] data) { 
         for (int i = 1; i < data.length; i++) {
             E x = data[i];

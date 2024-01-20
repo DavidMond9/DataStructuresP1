@@ -7,16 +7,25 @@ import org.junit.Test;
 
 import edu.ncsu.csc316.dsa.data.Student;
 
+/**
+ * Tests the Student Manager Class.
+ */
 public class StudentManagerTest {
 
 	private StudentManager sm;
 	
 	@Before
+	/**
+	 * Sets up the manager.
+	 */
 	public void setUp() {
 		sm = new StudentManager("input/student_ascendingID.csv");
 	}
 	
 	@Test
+	/**
+	 * Tests the manager sort with student first names.
+	 */
 	public void testSort() {
 		Student[] sorted = sm.sort();
 		assertEquals("Tanner",sorted[0].getFirst());
@@ -36,9 +45,5 @@ public class StudentManagerTest {
 		assertEquals("Loise",sorted[14].getFirst());
 		assertEquals("Nichole",sorted[15].getFirst());
 	}
-	
-	// TODO: Add test cases
-	// Suggestions:
-	// -> Test that custom comparators sort the data correctly
 
 }

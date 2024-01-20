@@ -4,6 +4,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Tests the Selection Sorter with lists of integers.
+ */
 public class SelectionSorterTest {
 	private Integer[] dataAscending = { 1, 2, 3, 4, 5 };
 	private Integer[] dataDescending = { 5, 4, 3, 2, 1 };
@@ -12,11 +15,17 @@ public class SelectionSorterTest {
 	private SelectionSorter<Integer> integerSorter;
 
 	@Before
+	/**
+	 * Sets up the selection.
+	 */
 	public void setUp() {
 		integerSorter = new SelectionSorter<Integer>();
 	}
 
 	@Test
+	/**
+	 * Tests the sorter with integers.
+	 */
 	public void testSortIntegers() {
 		integerSorter.sort(dataAscending);
 		assertTrue(dataAscending[0].equals(1));

@@ -10,15 +10,23 @@ import java.util.Comparator;
  */
 public class SelectionSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
     
+	/**
+	 * Constructor for SelectionSorter with comparator.
+	 * @param comparator comparator for the sorter.
+	 */
     public SelectionSorter(Comparator<E> comparator) {
         super(comparator);
     }
-    
+    /**
+	 * Constructor for SelectionSorter with comparator.
+	 */
     public SelectionSorter() {
     	this(null);
     }
       
-
+    /**
+     * Sorts the data using the Selection Sort technique.
+     */
     public void sort(E[] data) {
         for(int i = 0; i <= data.length - 1; i++) {
         	int min = i;

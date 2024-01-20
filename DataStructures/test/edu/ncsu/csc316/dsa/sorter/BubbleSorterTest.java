@@ -4,7 +4,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-
+/**
+ * Tests the Bubble Sorter with lists of integers.
+ */
 public class BubbleSorterTest {
 	private Integer[] dataAscending = { 1, 2, 3, 4, 5 };
 	private Integer[] dataDescending = { 5, 4, 3, 2, 1 };
@@ -13,11 +15,17 @@ public class BubbleSorterTest {
 	private BubbleSorter integerSorter;
 
 	@Before
+	/**
+	 * Sets up the sorter.
+	 */
 	public void setUp() {
 		integerSorter = new BubbleSorter<Integer>();
 	}
 
 	@Test
+	/**
+	 * Tests the sorter with the integers.
+	 */
 	public void testSortIntegers() {
 		integerSorter.sort(dataAscending);
 		assertTrue(dataAscending[0].equals(1));

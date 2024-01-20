@@ -10,6 +10,9 @@ import edu.ncsu.csc316.dsa.data.Identifiable;
  */
 public class RadixSorter<E extends Identifiable> implements Sorter<E> {
 	
+	/**
+	 * Sorts using the Radix Sort technique.
+	 */
 	public void sort(E[] data) {
 		int k = 0;
 		for(int i = 0; i <= data.length - 1; i++) {
