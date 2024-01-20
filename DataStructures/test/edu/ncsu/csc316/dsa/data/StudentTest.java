@@ -85,4 +85,18 @@ public class StudentTest {
 	public void testToString() {
 		assertEquals(sOne.toString(), "Student [first=OneFirst, last=OneLast, id=1, creditHours=1, gpa=1.0, unityID=oneUnityID]");
 	}
+	@Test
+	/**
+	 * Tests student hashCode.
+	 */
+	public void testHashCode() {
+		assertEquals(sOne.hashCode(), 1492839428);
+	}
+	@Test
+	/**
+	 * Tests student Equals.
+	 */
+	public void testEquals() {
+		assertTrue(sOne.equals(sOne));
+	}
 }
