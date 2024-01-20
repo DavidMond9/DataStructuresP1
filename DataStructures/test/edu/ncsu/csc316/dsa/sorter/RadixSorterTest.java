@@ -3,7 +3,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import edu.ncsu.csc316.dsa.data.Student;
 
 /**
