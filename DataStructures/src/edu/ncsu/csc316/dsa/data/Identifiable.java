@@ -5,7 +5,7 @@ package edu.ncsu.csc316.dsa.data;
  * @author Dr. King
  *
  */
-public interface Identifiable{
+public interface Identifiable {
 	/**
 	 * Gets the ID for counting sort.
 	 * @return the ID.

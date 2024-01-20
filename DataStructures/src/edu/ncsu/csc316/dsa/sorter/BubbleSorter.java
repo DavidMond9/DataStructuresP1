@@ -7,7 +7,7 @@ import java.util.Comparator;
  * sort to sort different lists.
  * @param <E> the generic type of data to sort
  */
-public class BubbleSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E>{
+public class BubbleSorter<E extends Comparable<E>> extends AbstractComparisonSorter<E> {
 	/**
 	 * Constructor for BubbleSorter, no comparator.
 	 */
@@ -23,6 +23,7 @@ public class BubbleSorter<E extends Comparable<E>> extends AbstractComparisonSor
 	}
 	/**
 	 * Sorts using the BubbleSort technique.
+	 * @param data list to sort.
 	 */
 	public void sort(E[] data) {
 		boolean r = true;

@@ -36,11 +36,10 @@ public class CountingSorterTest {
 	 * Test sorter for counting.
 	 */
 	private CountingSorter<Student> sorter;
-	
-	@Before
 	/**
 	 * Sets up the list of students.
 	 */
+	@Before
 	public void setUp() {
 		sOne = new Student("OneFirst", "OneLast", 1, 1, 1.0, "oneUnityID");
 		sTwo = new Student("TwoFirst", "TwoLast", 2, 2, 2.0, "twoUnityID");
@@ -50,11 +49,10 @@ public class CountingSorterTest {
 		
 		sorter = new CountingSorter<Student>();
 	}
-	
-	@Test
 	/**
 	 * Tests the sorter.
 	 */
+	@Test
 	public void testSortStudent() {
 		Student[] original = { sTwo, sOne, sFour, sThree, sFive };
 		sorter.sort(original);

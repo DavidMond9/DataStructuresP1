@@ -25,19 +25,17 @@ public class SelectionSorterTest {
 	 * Test selection sorter..
 	 */
 	private SelectionSorter<Integer> integerSorter;
-
-	@Before
 	/**
 	 * Sets up the selection.
 	 */
+	@Before
 	public void setUp() {
 		integerSorter = new SelectionSorter<Integer>();
 	}
-
-	@Test
 	/**
 	 * Tests the sorter with integers.
 	 */
+	@Test
 	public void testSortIntegers() {
 		integerSorter.sort(dataAscending);
 		assertTrue(dataAscending[0].equals(1));

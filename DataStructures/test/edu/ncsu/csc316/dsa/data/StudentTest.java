@@ -18,90 +18,89 @@ public class StudentTest {
 	 * Test student 2.
 	 */
 	private Student sTwo;
-
-	@Before
 	/**
 	 * Tests the set up for student.
 	 */
+	@Before
 	public void setUp() {
 		sOne = new Student("OneFirst", "OneLast", 1, 1, 1.0, "oneUnityID");
 		sTwo = new Student("TwoFirst", "TwoLast", 2, 2, 2.0, "twoUnityID");
 	}
-
-	@Test
 	/**
 	 * Tests student first name.
 	 */
+	@Test
+	
 	public void testSetFirst() {
 		sOne.setFirst("newOne");
 		assertEquals("newOne", sOne.getFirst());
 	}
-
-	@Test
 	/**
 	 * Tests student last name.
 	 */
+	@Test
+	
 	public void testSetLast() {
 		sOne.setLast("newOne");
 		assertEquals("newOne", sOne.getLast());
 	}
-
-	@Test
 	/**
 	 * Tests student ID.
 	 */
+	@Test
+
 	public void testSetId() {
 		sOne.setId(100);
 		assertEquals(100, sOne.getId());
 	}
-
-	@Test
 	/**
 	 * Tests student GPA.
 	 */
+	@Test
 	public void testSetGpa() {
 		sOne.setGpa(3.51);
 		assertEquals(3.51, sOne.getGpa(), 0.001);
 	}
-	
-	@Test
 	/**
 	 * Tests student Unity ID.
 	 */
+	@Test
 	public void testSetUnityID() {
 		sOne.setUnityID("oneUnity");
 		assertEquals("oneUnity", sOne.getUnityID());
 	}
-
-	@Test
 	/**
 	 * Tests student CompareTo.
 	 */
+	@Test
 	public void testCompareTo() {
 		assertTrue(sOne.compareTo(sTwo) < 0);
 		assertTrue(sTwo.compareTo(sOne) > 0);
 		assertTrue(sOne.compareTo(sOne) == 0);
 		assertTrue(sTwo.compareTo(sTwo) == 0);
 	}
-	
-	@Test
 	/**
 	 * Tests student toString.
 	 */
+	@Test
 	public void testToString() {
 		assertEquals(sOne.toString(), "Student [first=OneFirst, last=OneLast, id=1, creditHours=1, gpa=1.0, unityID=oneUnityID]");
 	}
-	@Test
+	
 	/**
 	 * Tests student hashCode.
 	 */
+	@Test
+	
 	public void testHashCode() {
 		assertEquals(sOne.hashCode(), 1492839428);
 	}
-	@Test
+	
 	/**
 	 * Tests student Equals.
 	 */
+	@Test
+
 	public void testEquals() {
 		assertTrue(sOne.equals(sOne));
 	}

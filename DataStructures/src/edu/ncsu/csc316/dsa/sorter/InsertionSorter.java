@@ -25,6 +25,7 @@ public class InsertionSorter<E extends Comparable<E>> extends AbstractComparison
     
     /**
      * Sorts using the Insertion Sort technique.
+     * @param data list to sort.
      */
     public void sort(E[] data) { 
         for (int i = 1; i < data.length; i++) {

@@ -34,11 +34,10 @@ public class RadixSorterTest {
 	 * Sorter for Radix.
 	 */
 	private RadixSorter<Student> sorter;
-
-	@Before
 	/**
 	 * Tests the set up with students.
 	 */
+	@Before
 	public void setUp() {
 		sOne = new Student("OneFirst", "OneLast", 1, 1, 1.0, "oneUnityID");
 		sTwo = new Student("TwoFirst", "TwoLast", 2, 2, 2.0, "twoUnityID");
@@ -48,11 +47,10 @@ public class RadixSorterTest {
 		
 		sorter = new RadixSorter<Student>();
 	}
-	
-	@Test
 	/**
 	 * Tests sorter with student.
 	 */
+	@Test
 	public void testSortStudent() {
 		Student[] original = { sTwo, sOne, sFour, sThree, sFive };
 		sorter.sort(original);

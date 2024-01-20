@@ -24,20 +24,18 @@ public class BubbleSorterTest {
 	/**
 	 * Test sorter for BubbleSort.
 	 */
-	private BubbleSorter integerSorter;
-
-	@Before
+	private BubbleSorter<Integer> integerSorter;
 	/**
 	 * Sets up the sorter.
 	 */
+	@Before
 	public void setUp() {
 		integerSorter = new BubbleSorter<Integer>();
 	}
-
-	@Test
 	/**
 	 * Tests the sorter with the integers.
 	 */
+	@Test
 	public void testSortIntegers() {
 		integerSorter.sort(dataAscending);
 		assertTrue(dataAscending[0].equals(1));

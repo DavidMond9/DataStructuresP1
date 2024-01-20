@@ -38,7 +38,10 @@ public abstract class AbstractComparisonSorter<E extends Comparable<E>> implemen
      */
     private class NaturalOrder implements Comparator<E> {
     	/**
-    	 * Compare function with the comparator.
+    	 * Compare function in natural order.
+    	 * @param first first element to compare
+    	 * @param second second element to compare
+    	 * @return returns a comparable with compareTo function.
     	 */
         public int compare(E first, E second) {
             return ((Comparable<E>) first).compareTo(second);

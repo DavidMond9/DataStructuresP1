@@ -12,33 +12,34 @@ public class RadixSorter<E extends Identifiable> implements Sorter<E> {
 	
 	/**
 	 * Sorts using the Radix Sort technique.
+	 * @param data list to sort.
 	 */
 	public void sort(E[] data) {
 		int k = 0;
 		for(int i = 0; i <= data.length - 1; i++) {
 			k = Math.max(k, data[i].getId());
 		}
-		double x = Math.ceil(Math.log(k+1) / Math.log(10));
+		double x = Math.ceil(Math.log(k + 1) / Math.log(10));
 		int p = 1;
 		for(int j = 1; j <= x; j++) {
-			int[] B = new int[10];
+			int[] listB = new int[10];
 			for(int i = 0; i <= data.length - 1; i++) {
-				B[(data[i].getId() / p) % 10] = B[(data[i].getId() / p) % 10] + 1;
+				listB[(data[i].getId() / p) % 10] = listB[(data[i].getId() / p) % 10] + 1;
 			}
 			for(int i = 1; i <= 9; i++) {
-				B[i] = B[i-1] + B[i];
+				listB[i] = listB[i - 1] + listB[i];
 			}
 			@SuppressWarnings("unchecked")
-			E[] F = (E[])(new Identifiable[data.length]);
+			E[] listF = (E[])(new Identifiable[data.length]);
 			for(int i = data.length - 1; i >= 0; i--) {
-				F[B[(data[i].getId() / p) % 10] - 1] = data[i];
-				B[(data[i].getId() / p) % 10] = B[(data[i].getId() / p) % 10] - 1;
+				listF[listB[(data[i].getId() / p) % 10] - 1] = data[i];
+				listB[(data[i].getId() / p) % 10] = listB[(data[i].getId() / p) % 10] - 1;
 			}
 			
 			for(int i = 0; i <= data.length - 1; i++) {
-				data[i] = F[i];
+				data[i] = listF[i];
 			}
-			p = p*10;
+			p = p * 10;
 		}
 	}
 }

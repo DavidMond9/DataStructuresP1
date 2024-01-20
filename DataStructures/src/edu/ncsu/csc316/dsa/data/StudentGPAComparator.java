@@ -7,7 +7,7 @@ import java.util.Comparator;
  * @author Dr. King
  *
  */
-public class StudentGPAComparator implements Comparator<Student>{
+public class StudentGPAComparator implements Comparator<Student> {
 
 	/**
 	 * Compares students based on GPA in descending order.

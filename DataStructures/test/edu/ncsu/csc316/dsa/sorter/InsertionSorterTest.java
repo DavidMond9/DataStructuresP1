@@ -26,19 +26,17 @@ public class InsertionSorterTest {
 	 * Test sorter for insertion sorter.
 	 */
 	private InsertionSorter<Integer> integerSorter;
-
-	@Before
 	/**
 	 * Sets up the insertion sorter with integers.
 	 */
+	@Before
 	public void setUp() {
 		integerSorter = new InsertionSorter<Integer>();
 	}
-
-	@Test
 	/**
 	 * Tests the sorter.
 	 */
+	@Test
 	public void testSortIntegers() {
 		integerSorter.sort(dataAscending);
 		assertTrue(dataAscending[0].equals(1));

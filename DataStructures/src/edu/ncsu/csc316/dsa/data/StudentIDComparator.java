@@ -7,7 +7,7 @@ import java.util.Comparator;
  * @author Dr. King
  *
  */
-public class StudentIDComparator implements Comparator<Student>{
+public class StudentIDComparator implements Comparator<Student> {
 
 	/**
 	 * Compares students based on id number in ascending order

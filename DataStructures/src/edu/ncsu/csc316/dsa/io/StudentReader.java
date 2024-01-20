@@ -27,7 +27,7 @@ public class StudentReader {
 	public static Student[] readInputAsArray(String filePath)
 	{
 		Student[] list = new Student[10];
-		try(Scanner scan = new Scanner(new FileInputStream(filePath),"UTF8"))
+		try(Scanner scan = new Scanner(new FileInputStream(filePath), "UTF8"))
 		{
 			scan.nextLine(); // SKIP HEADER LINE
 			int index = 0;
